@@ -11,6 +11,19 @@ const UploadButton = ({ onFileUpload }) => {
     onFileUpload(file);
   };
 
+  const handleUploadConfirmation = () => {
+    if (selectedFile) {
+      const isConfirmed = window.confirm(`Are you sure you want to upload ${selectedFile.name}?`);
+      if (isConfirmed) {
+        // Perform upload
+        // For demonstration purposes, we'll just log a message
+        console.log(`File ${selectedFile.name} uploaded.`);
+      }
+    } else {
+      alert('Please choose a file before uploading. It should take less than 30 seconds to upload.');
+    }
+  };
+
   return (
     <div className="upload-container"> {/* Apply the container class */}
       <input
@@ -21,6 +34,7 @@ const UploadButton = ({ onFileUpload }) => {
       />
       <p>Accepts WAV files only.</p>
       <p>{selectedFile ? `Selected file: ${selectedFile.name}` : 'No file selected'}</p>
+      <button onClick={handleUploadConfirmation}>Upload</button>
     </div>
   );
 };

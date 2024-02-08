@@ -8,7 +8,7 @@ header {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: auto; /* Pushes the logo to center */
 }
 
@@ -18,5 +18,22 @@ header {
   border: none;
   cursor: pointer;
   font-size: 1.25rem;
+}
+
+.menu-list {
+  text-decoration: none;
+  color: white; /* Default text color */
+  padding: 8px 16px; /* Padding for spacing */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s;
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  font-family: "Montserrat-light";
+}
+.nav-link:hover {
+  background-color: grey;
 }
 
