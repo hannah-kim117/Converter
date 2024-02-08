@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2b565e;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin: auto; /* Pushes the logo to center */
+}
+
+.menu-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+

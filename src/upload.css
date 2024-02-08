@@ -1,0 +1,22 @@
+
+
+.upload-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Align items vertically */
+    height: 10vh; 
+    font-size: 1.25rem;
+}
+  
+
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Align items vertically */
+    height: 100vh; 
+    font-size: 1.25rem;
+    
+  }
+  
