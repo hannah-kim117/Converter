@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 const Header = () => {
 	const [isMenuVisible, setMenuVisible] = useState(false);
@@ -12,14 +15,14 @@ const Header = () => {
     <header>
       <div className="logo">Audio Converter</div>
       <button className="menu-button" onClick={handleMenuClick}>
-        Menu
+      <FontAwesomeIcon icon={faBars} />
       </button>
 
       
 	  {isMenuVisible && (
         <div className="side-menu">
           {/* Content of the side menu */}
-          <p>--This will be the side menu content.--</p>
+          
           <ul className='menu-list'>
             <li><a className='nav-link' href='/home'>Home</a></li>
             <li><a className='nav-link' href='/about'>About Us</a></li>

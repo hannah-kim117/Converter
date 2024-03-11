@@ -1,0 +1,13 @@
+.faq-container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
