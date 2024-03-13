@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
-import './upload.css'; // Import the CSS file
+import React, { useState, useRef } from 'react';
+import './upload.css'; 
 
 
 const UploadButton = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedBitRate, setSelectedBitRate] = useState(null);
+
+  const fileInputRef = useRef(null); 
+  const handleCustomButtonClick = () => {
+    fileInputRef.current.click(); // Trigger click event on file input
+  };
 
   const handleFileChange = (event) => {
     const file = event.target.files[0]; // retrieve users file from event and store it in local variable called file
@@ -86,14 +91,18 @@ const UploadButton = () => {
         accept="audio/wav"
         required
         onChange={handleFileChange}
-        className="upload-button" /* Assign a class name to the input element */
+        className="choose-file-button" /* Assign a class name to the input element */
+        ref={fileInputRef} // Attach the ref to the file input element
+        style={{ display: 'none' }} // Hide the file input button
       />
+            <button className="choose-file-button" onClick={handleCustomButtonClick}>Choose a File</button>
+
       <p><i>Accepts WAV files only.</i></p>
       
         
-      <p>{selectedFile ? `Selected file: ${selectedFile.name}` : 'No file selected'}</p>
+      <p>{selectedFile ? `Selected file: ${selectedFile.name}` : '(No file selected)'}</p>
 
-      <label for="bitRateInput">Specify bitrate between 96 and 320 kbps:</label>
+      <label className='bitrate-label' for="bitRateInput">Specify bitrate between 96 and 320 kbps: </label>
       <input
           type="number"
           min="96"
@@ -103,7 +112,9 @@ const UploadButton = () => {
           required
           onChange={handleBitRate}
         />
-      <button onClick={handleSubmit}>Upload</button>
+      <div>
+      <button onClick={handleSubmit} className='upload-button'>Upload</button>
+      </div>
     </div>
   );
 };

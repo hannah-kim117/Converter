@@ -1,0 +1,49 @@
+/* about.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Use Arial font as a fallback */
+}
+
+.about-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
+    border: 1px solid #e0e0e0; /* Add border */
+    font-size: 18px;
+}
+
+.header {
+    text-align: center;
+    
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.description ul,
+.description ol {
+    list-style-type: none; /* Remove default list styles */
+}
+
+.description ul li:before {
+    content: "\2022"; /* Add bullet point using Unicode character */
+    color: 	#1985a1; /* Set bullet point color */
+    font-size: 1.2em; /* Adjust bullet point size */
+    margin-right: 10px; /* Add space between bullet point and text */
+}
+
+.description ol li {
+    counter-increment: my-counter; /* Increment counter */
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+.description ol li:before {
+    content: counter(my-counter) ". "; /* Add counter before each list item */
+    color: 	#1985a1; /* Set counter color */
+    font-weight: bold; /* Make counter bold */
+}

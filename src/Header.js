@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="logo">Audio Converter</div>
+      <div className="logo">AudioConvert</div>
       <button className="menu-button" onClick={handleMenuClick}>
       <FontAwesomeIcon icon={faBars} />
       </button>

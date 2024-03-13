@@ -1,0 +1,68 @@
+Hannah Kim
+
+My project is an audio converter that allows users to 
+convert WAV files to MP3 files.
+
+1. Home page displays the actual service that asks 
+    users to choose a file they wish to convert,
+    and requires users to specify the bitrate before 
+    uploading. Users can navigate to other pages by 
+    clicking this menu icon. Users can go to the 
+    About Us page where they can read about what this 
+    service does and how to use it.
+    FAQ page shows a list of frequently asked 
+    questions. If they are not able to find the 
+    exact question they have,
+    they can always use the Contact Us feature.
+    Contact Us button will navigate the users to the 
+    contact us page where they can send any questions 
+    they might have.
+
+2. The feature that uses the microservice my partner 
+    provided is the WAV file to MP3 file conversion.
+    When users upload a file with a specified bitrate,
+     my partner's microservice will do the conversion 
+     and automatically download the converted MP3 file
+      onto the user's local device. 
+
+3. Heuristics #1: The About Us page describes the 
+        benefits of using this service 
+    #2: There is a pop up that lets the user know that 
+        the upload will only take about 30 seconds.
+    #3: The menu bar in the header lets users decide
+        the specific information they want to look at.
+        If they want to know more specifically about 
+        the service, they can navigate to the About Us
+        page where it describes the service in detail.
+    #4: To keep familiar features available, the icons 
+        used in the project were basic enough for the
+        general public to understand (ex. hamburger style).
+        Buttons are descriptive which makes its function
+        obvious. 
+    #5: undo/redo and backtracking is available through
+        the cancel buttons. When users press Choose a File,
+        they can always cancel the upload by pressing the
+        cancel button. Even after users press upload, a pop
+        up will double check with the user if they want to
+        upload the specified file. 
+    #6: The features are placed in the order they should
+        be performed. The Choose a File button is the 
+        biggest button and the first thing users would see.
+        Once the file has been uploaded, the next thing down
+        the line is specifying the bitrate. The last thing
+        should be pressing the upload button. Even if 
+        users can the order wrong, a pop up will let them 
+        know what to do. The How To section also shows
+        users step by step.
+    #7: a FAQ page and contact us page is available for 
+        users who need more assistance performing a task.
+    #8: If a user hasn't selected a file or bitrate 
+        before uploading, a popup will show up.
+
+4. A quality attribute that I reflected in my software is 
+    Responsiveness; How quick the webpage responds to 
+    the user’s requested action is a big factor of 
+    the user’s experience with the webpage. The audio
+    converter service only takes less than 30 seconds for
+    the whole process.
+5. (go through code)
